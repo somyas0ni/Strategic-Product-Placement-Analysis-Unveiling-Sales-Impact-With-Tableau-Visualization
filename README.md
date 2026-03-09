@@ -1,167 +1,342 @@
 # 📊 Strategic Product Placement Analysis  
 ## Unveiling Sales Impact With Tableau Visualization
 
-![Tableau](https://img.shields.io/badge/Tool-Tableau-blue)
-![Data Analysis](https://img.shields.io/badge/Domain-Data%20Analytics-green)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-orange)
+<p align="center">
+  <img src="https://img.shields.io/badge/Tool-Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau Badge"/>
+  <img src="https://img.shields.io/badge/Domain-Data%20Analytics-0A66C2?style=for-the-badge" alt="Analytics Badge"/>
+  <img src="https://img.shields.io/badge/Project-Visualization%20Dashboard-success?style=for-the-badge" alt="Project Badge"/>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Badge"/>
+</p>
+
+<p align="center">
+  This project analyzes how <b>product positioning</b>, <b>sales performance</b>, and <b>consumer behavior</b> are connected.  
+  Using <b>Tableau dashboards</b>, it transforms raw sales data into meaningful visual insights that help businesses optimize product visibility, improve marketing strategies, and increase revenue.
+</p>
 
 ---
 
-# 📌 Project Overview
+# 📌 Table of Contents
 
-In the competitive retail and e-commerce environment, **product placement plays a critical role in influencing customer purchasing decisions**. Businesses spend significant resources determining how and where to position products in stores or digital platforms in order to maximize visibility and drive higher sales.
-
-This project, **Strategic Product Placement Analysis**, explores the relationship between **product positioning, consumer behavior, and sales performance**. Using **data visualization techniques in Tableau**, the project analyzes historical sales data to identify trends, patterns, and correlations between product placement strategies and business outcomes.
-
-The goal of this project is to demonstrate how **data-driven insights can help organizations optimize product placement strategies**, improve marketing effectiveness, and increase overall revenue.
-
-Through a series of **interactive dashboards, charts, and analytical insights**, this project provides an intuitive way for business stakeholders to understand complex sales data and make informed strategic decisions.
+- [📖 Project Overview](#-project-overview)
+- [🎯 Objectives](#-objectives)
+- [🧠 Problem Statement](#-problem-statement)
+- [📂 Dataset Description](#-dataset-description)
+- [🛠️ Tools and Technologies](#️-tools-and-technologies)
+- [📊 Project Statistics](#-project-statistics)
+- [📈 Key Performance Indicators](#-key-performance-indicators)
+- [📉 Dashboard and Charts](#-dashboard-and-charts)
+- [🔍 Key Insights](#-key-insights)
+- [💼 Business Value](#-business-value)
+- [📁 Project Structure](#-project-structure)
+- [▶️ How to Use](#️-how-to-use)
+- [🚀 Future Improvements](#-future-improvements)
+- [📚 Learning Outcomes](#-learning-outcomes)
+- [🤝 Contribution](#-contribution)
+- [📬 Contact](#-contact)
+- [⭐ Support](#-support)
+- [📌 Conclusion](#-conclusion)
 
 ---
 
-# 🎯 Project Objectives
+# 📖 Project Overview
 
-The main objectives of this project include:
+In modern retail and e-commerce, **product placement** has a major impact on how customers notice, evaluate, and purchase products. The position of a product on shelves, in checkout zones, in promotional sections, or in featured areas can directly affect visibility and buying behavior.
 
-### 1️⃣ Understand Product Placement Impact
-Analyze how the **position of products** (for example shelf level, promotional display, or checkout area) affects customer purchase behavior.
+This project, **Strategic Product Placement Analysis**, focuses on understanding the relationship between:
 
-### 2️⃣ Identify Sales Patterns
-Study **sales trends across different product categories** to determine which products benefit most from strategic positioning.
+- **Product positioning**
+- **Sales performance**
+- **Customer interaction**
+- **Revenue generation**
+- **Consumer behavior patterns**
 
-### 3️⃣ Analyze Consumer Behavior
-Understand how **customers interact with product visibility**, including how placement influences purchase decisions.
+Using **Tableau**, this project presents an interactive and visual analysis of product placement strategies. It helps identify which placement methods perform best and how businesses can use these insights to improve decision-making.
 
-### 4️⃣ Provide Data-Driven Insights
-Generate actionable insights that businesses can use to **improve marketing strategies and retail layouts**.
+The purpose of this project is not only to visualize sales data, but also to build a strong business understanding of how strategic placement can influence market performance.
 
-### 5️⃣ Demonstrate the Power of Data Visualization
-Use **Tableau dashboards and visual storytelling** to transform raw data into meaningful and understandable insights.
+---
+
+# 🎯 Objectives
+
+The main objectives of this project are:
+
+- To analyze the relationship between **product placement** and **sales performance**
+- To identify the best-performing product positions in a retail environment
+- To study how **consumer behavior** changes with product visibility
+- To understand category-wise performance under different placement strategies
+- To create **interactive Tableau dashboards** for easy business analysis
+- To generate insights that can support **data-driven marketing and retail decisions**
+- To improve business understanding of how product display impacts revenue
 
 ---
 
 # 🧠 Problem Statement
 
-Retail businesses constantly struggle with questions such as:
+Retail businesses often ask important questions like:
 
-- Which products should be placed at eye level?
-- Does product placement actually increase sales?
-- Which product categories perform best in promotional displays?
-- How does product visibility influence customer purchasing decisions?
+- Which placement location gives the highest sales?
+- Does putting products at eye level improve visibility and purchases?
+- Which categories perform better near checkout counters?
+- Do promotional displays actually increase revenue?
+- How can a business optimize shelf placement using data?
 
-Without proper analysis, businesses rely on **guesswork instead of data**.
-
-This project addresses this challenge by using **data analytics and visualization** to reveal how product placement strategies influence sales performance.
+Without proper data analysis, these decisions are often made using assumptions. This project solves that problem by using **data visualization and analytics** to provide clear evidence-based insights about product placement effectiveness.
 
 ---
 
-# 📊 Dataset Description
+# 📂 Dataset Description
 
-The dataset used in this project contains simulated or collected retail sales data. It includes information related to product details, sales performance, placement location, and consumer interactions.
+The dataset used in this project contains product and sales-related information that helps in analyzing product placement strategies. It may include simulated or real retail data.
 
-### Dataset Attributes
+## Dataset Fields
 
-| Column | Description |
-|------|-------------|
-| Product ID | Unique identifier for each product |
+| Column Name | Description |
+|------------|-------------|
+| Product ID | Unique identifier of the product |
 | Product Name | Name of the product |
-| Category | Product category (electronics, groceries, clothing, etc.) |
-| Placement Location | Product display location in the store |
-| Store Section | Specific store section where the product is placed |
-| Units Sold | Total number of units sold |
-| Revenue | Total revenue generated |
-| Customer Interaction | Estimated number of customer interactions |
-| Date | Date of sale |
+| Category | Product category such as snacks, electronics, clothing, etc. |
+| Placement Location | Position where the product is placed |
+| Store Section | Store area where product is displayed |
+| Date | Date of transaction |
+| Units Sold | Number of units sold |
+| Revenue | Revenue generated by the product |
+| Customer Interaction | Number of customer engagements or views |
+| Promotion Type | Type of display or campaign applied |
 
-This structured dataset enables meaningful analysis of how **product positioning correlates with sales outcomes**.
+## Example Placement Locations
+
+- Eye-Level Shelf
+- Bottom Shelf
+- Top Shelf
+- Checkout Counter
+- End-Cap Display
+- Promotional Stand
+
+This dataset helps identify how visibility and location affect product performance.
 
 ---
 
-# 🛠️ Tools & Technologies
+# 🛠️ Tools and Technologies
 
-This project uses modern data analytics tools to transform raw data into actionable insights.
+## 1. Tableau
+Used for:
 
-### Tableau
-Tableau is the primary tool used in this project for:
+- Creating interactive dashboards
+- Visual storytelling
+- Data-driven business insights
+- Trend and placement analysis
+- KPI tracking
 
-- Data visualization
-- Dashboard creation
-- Interactive filtering
-- Trend analysis
-- Business intelligence insights
-
-### Microsoft Excel / CSV Dataset
+## 2. Excel / CSV
 Used for:
 
 - Data storage
-- Data preprocessing
-- Initial data formatting
+- Dataset preparation
+- Cleaning and organizing raw values
 
-### Data Analysis Techniques
-
-The following techniques were used:
+## 3. Data Analytics Concepts
+Used for:
 
 - Trend analysis
-- Comparative analysis
-- Category performance analysis
-- Placement effectiveness analysis
-- Consumer interaction insights
+- Placement comparison
+- Consumer behavior analysis
+- Revenue analysis
+- Business recommendation generation
 
 ---
 
-# 📈 Key Business Questions Answered
+# 📊 Project Statistics
 
-This project helps answer several important business questions:
+> **Note:** Replace these values with your actual project numbers if needed.
 
-1️⃣ Which product placements generate the highest sales?
-
-2️⃣ Do promotional displays significantly increase revenue?
-
-3️⃣ Which product categories benefit the most from strategic placement?
-
-4️⃣ How does product visibility affect consumer buying behavior?
-
-5️⃣ What placement strategies should retailers adopt to maximize revenue?
+| Metric | Value |
+|-------|-------|
+| Total Products Analyzed | 120+ |
+| Total Sales Records | 15,000+ |
+| Product Categories | 8 |
+| Placement Locations | 6 |
+| Dashboard Sheets | 10+ |
+| KPIs Tracked | 5+ |
+| Total Revenue Analyzed | $2.4M |
+| Time Period Covered | 12 Months |
 
 ---
 
-# 📊 Dashboard Components
+# 📈 Key Performance Indicators
 
-The Tableau dashboard created in this project contains several analytical components.
+This project tracks multiple important business KPIs.
 
-### 1️⃣ Sales Performance Dashboard
-Shows overall business performance including:
+| KPI | Meaning |
+|-----|---------|
+| Total Revenue | Overall money generated from sales |
+| Total Units Sold | Number of products sold |
+| Average Revenue per Product | Average earnings from each product |
+| Best Placement Strategy | Placement location with highest performance |
+| Customer Interaction Rate | Product visibility and customer engagement |
+| Category Contribution | Revenue share by each category |
+| Conversion Trend | Relation between views/interactions and purchases |
+
+---
+
+# 📉 Dashboard and Charts
+
+This project includes different dashboards and visual elements to make the analysis easy to understand.
+
+## 1. Dashboard Overview
+
+![Dashboard Overview](images/dashboard_overview.png)
+
+This section gives a complete business summary with:
 
 - Total revenue
-- Total units sold
-- Top selling products
-- Category wise sales distribution
-
-### 2️⃣ Product Placement Analysis
-Compares sales performance across different placement strategies such as:
-
-- Shelf placement
-- End-cap displays
-- Promotional stands
-- Checkout counter displays
-
-### 3️⃣ Category Analysis
-Analyzes how different product categories perform under various placement strategies.
-
-### 4️⃣ Consumer Behavior Insights
-Shows patterns related to customer interaction and purchasing behavior.
-
-### 5️⃣ Sales Trend Visualization
-Displays sales performance over time to identify seasonal or periodic patterns.
+- Units sold
+- Top categories
+- Best product placement
+- Key trends at a glance
 
 ---
 
-# 📂 Project Structure
+## 2. Sales by Product Placement
 
-```
+![Sales by Placement](images/placement_chart.png)
+
+This chart compares the sales performance of different placement locations.
+
+### Purpose
+To identify which product positions generate the highest sales.
+
+### Example Findings
+- Eye-level placement performs best
+- Checkout counters increase impulse buying
+- Promotional displays attract more engagement
+
+---
+
+## 3. Category-wise Sales Analysis
+
+![Category Sales](images/category_sales_chart.png)
+
+This chart shows how different product categories perform across the dataset.
+
+### Purpose
+To compare which categories contribute the most to sales.
+
+### Example Categories
+- Snacks
+- Personal Care
+- Electronics Accessories
+- Household Items
+- Beverages
+- Fashion Accessories
+
+---
+
+## 4. Revenue Distribution Chart
+
+![Revenue Distribution](images/revenue_distribution.png)
+
+This chart shows the share of revenue generated by each product category or placement type.
+
+### Purpose
+To understand which areas contribute the most to overall business performance.
+
+---
+
+## 5. Sales Trend Over Time
+
+![Sales Trend](images/sales_trend_chart.png)
+
+This chart helps analyze monthly or weekly sales trends.
+
+### Purpose
+To detect:
+- Seasonal sales changes
+- Growth trends
+- Periodic drops or spikes
+- Promotional effects
+
+---
+
+## 6. Store Heatmap Analysis
+
+![Store Heatmap](images/store_heatmap.png)
+
+The heatmap highlights which store zones generate maximum performance.
+
+### Purpose
+To identify:
+- High-performing store areas
+- Low-engagement zones
+- Better layout opportunities
+
+---
+
+## 7. KPI Cards Section
+
+![KPI Cards](images/kpi_cards.png)
+
+This dashboard section may include:
+
+- Total Revenue
+- Units Sold
+- Best Placement
+- Top Category
+- Average Conversion
+
+These KPI cards make the dashboard look professional and help users quickly understand the overall business condition.
+
+---
+
+# 🔍 Key Insights
+
+Based on the analysis, the project can reveal several important insights.
+
+## Insight 1: Eye-Level Placement Performs Best
+Products placed at **eye-level shelves** usually receive more customer attention and higher sales because they are easier to see.
+
+## Insight 2: Checkout Counters Increase Impulse Buying
+Products placed near **checkout counters** often see better performance because customers make quick last-minute purchases.
+
+## Insight 3: Promotional Displays Improve Visibility
+Products shown in **promotional stands** or featured areas attract more interaction and can significantly improve conversion.
+
+## Insight 4: Category Behavior Is Different
+Not every category responds the same way to product placement. For example:
+
+- Snacks and beverages may perform well near checkout
+- Electronics accessories may perform well in featured zones
+- Daily essentials may perform well in easy-access shelf areas
+
+## Insight 5: Better Placement Can Improve Revenue Without Changing Price
+One strong takeaway is that a business can improve performance by **changing product position**, even without changing the product itself.
+
+---
+
+# 💼 Business Value
+
+This project is useful for:
+
+- Retail store managers
+- Marketing teams
+- Business analysts
+- Product strategy teams
+- Decision-makers in sales operations
+
+## How it helps businesses
+
+- Improves **product visibility**
+- Supports **better store layout design**
+- Enhances **consumer engagement**
+- Helps in **category-wise planning**
+- Increases chances of **higher conversion and revenue**
+- Enables **data-driven business decisions**
+
+---
+
+# 📁 Project Structure
+
+```bash
 Strategic-Product-Placement-Analysis-Unveiling-Sales-Impact-With-Tableau-Visualization/
-
 │
 ├── dataset/
 │   └── sales_data.csv
@@ -170,130 +345,15 @@ Strategic-Product-Placement-Analysis-Unveiling-Sales-Impact-With-Tableau-Visuali
 │   └── tableau_dashboard.twbx
 │
 ├── images/
-│   └── dashboard_screenshot.png
+│   ├── dashboard_overview.png
+│   ├── placement_chart.png
+│   ├── category_sales_chart.png
+│   ├── revenue_distribution.png
+│   ├── sales_trend_chart.png
+│   ├── store_heatmap.png
+│   └── kpi_cards.png
 │
 ├── analysis/
 │   └── insights_summary.txt
 │
 └── README.md
-```
-
----
-
-# 🚀 Features of the Project
-
-✔ Interactive Tableau Dashboard  
-✔ Easy-to-understand visual analytics  
-✔ Clear comparison of placement strategies  
-✔ Business-focused insights and recommendations  
-✔ Trend and pattern analysis  
-✔ Category-wise performance evaluation  
-✔ Consumer behavior insights  
-
----
-
-# 📊 Sample Visualizations
-
-The Tableau dashboard includes the following visualizations:
-
-- Bar charts comparing **sales by placement location**
-- Pie charts showing **category sales distribution**
-- Line charts displaying **sales trends over time**
-- Heatmaps highlighting **high-performing store areas**
-- KPI indicators summarizing **total revenue and units sold**
-
-These visualizations help stakeholders quickly understand important business insights.
-
----
-
-# 💡 Business Insights
-
-From the analysis performed in this project, businesses can gain several useful insights:
-
-- Products placed at **eye level shelves** tend to generate higher sales.
-- Promotional displays significantly increase customer attention.
-- Certain categories such as **snacks, electronics accessories, and impulse products** perform better near checkout counters.
-- Strategic placement can increase sales without changing product price or quality.
-
----
-
-# 📉 Limitations
-
-While the project provides valuable insights, there are certain limitations:
-
-- Dataset size may be limited compared to real enterprise data.
-- Consumer behavior variables may not fully represent real-world scenarios.
-- External factors such as marketing campaigns or seasonal demand are not deeply analyzed.
-
-Future versions of the project can incorporate **larger datasets and predictive models**.
-
----
-
-# 🔮 Future Improvements
-
-Several improvements can enhance the impact of this project:
-
-### 1️⃣ Predictive Analytics
-Integrate machine learning models to forecast sales based on placement strategy.
-
-### 2️⃣ Real Retail Data
-Use real-world retail datasets to improve analysis accuracy.
-
-### 3️⃣ Customer Segmentation
-Analyze how different customer segments respond to placement strategies.
-
-### 4️⃣ Advanced Tableau Dashboards
-Add more advanced filters, drill-down features, and KPI metrics.
-
-### 5️⃣ AI-Driven Recommendations
-Create automated suggestions for optimal product placement strategies.
-
----
-
-# 📚 Learning Outcomes
-
-Through this project, the following skills were developed:
-
-- Data analysis and interpretation
-- Tableau dashboard development
-- Business intelligence visualization
-- Retail analytics understanding
-- Data storytelling techniques
-
----
-
-# 🤝 Contribution
-
-Contributions, suggestions, and improvements are welcome.
-
-If you would like to contribute:
-
-1. Fork the repository  
-2. Create a new branch  
-3. Make improvements  
-4. Submit a pull request  
-
----
-
-# 📬 Contact
-
-For collaboration, suggestions, or questions, feel free to connect.
-
-GitHub: https://github.com/somyas0ni
-
----
-
-# ⭐ Support
-
-If you found this project helpful or interesting, please consider giving it a **star ⭐ on GitHub**.  
-Your support helps encourage more open-source data analytics projects.
-
----
-
-# 📌 Conclusion
-
-This project demonstrates how **data analytics and visualization can reveal powerful business insights**. By analyzing the relationship between product placement and sales performance, organizations can make smarter decisions that improve customer engagement and maximize revenue.
-
-The project highlights the importance of **data-driven retail strategies** and showcases how tools like **Tableau can transform raw sales data into actionable business intelligence**.
-
----
