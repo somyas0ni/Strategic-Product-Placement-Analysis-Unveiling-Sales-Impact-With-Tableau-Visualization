@@ -279,7 +279,7 @@ If you would like to contribute:
 
 For collaboration, suggestions, or questions, feel free to connect.
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/somyas0ni
 
 ---
 
