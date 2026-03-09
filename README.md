@@ -1,0 +1,2 @@
+# Strategic-Product-Placement-Analysis-Unveiling-Sales-Impact-With-Tableau-Visualization
+This project analyzes the relationship between product positioning, sales performance, and consumer behavior using Tableau. It visualizes sales data and product placement strategies to identify patterns that help businesses optimize product visibility, improve marketing strategies, and increase revenue through data-driven insights.
